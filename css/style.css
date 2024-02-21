@@ -1,0 +1,25 @@
+header {
+    background-color: bisque;
+
+    img {
+        height: auto;
+        width: 200px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+header img {
+    height: auto;
+    width: 200px;
+}
+
+body {
+    background-color: blanchedalmond;
+}
