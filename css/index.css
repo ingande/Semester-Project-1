@@ -12,6 +12,7 @@
 .ticket {
     .section-txt {
         position: relative;
+        height: 20rem;
 
         .btn {
             position: absolute;

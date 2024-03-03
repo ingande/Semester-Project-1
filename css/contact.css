@@ -58,3 +58,15 @@ input[type=submit] {
         background-color: #FFC58F;
     }
 }
+
+@media (max-width: 880px) {
+    .contact {
+
+
+        .find,
+        .open {
+            width: 100%;
+        }
+
+    }
+}
