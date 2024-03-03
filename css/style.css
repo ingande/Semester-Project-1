@@ -1,25 +1,136 @@
-header {
-    background-color: bisque;
+@import url(./reset.css);
+@import url(./typography.css);
+
+
+:root {
+    --orange: #EEA158;
+    --lilac: #C9B7F0;
+    --green: #94D5C3;
+    --spacer: 24px;
+}
+
+html {
+    font-family: 'Bayon', sans-serif;
+    font-size: 100%;
+    margin: 0 5rem;
+}
+
+body {
+    background-color: white;
+}
+
+header,
+footer {
+    width: 100%;
+    background-color: var(--orange);
 
     img {
         height: auto;
-        width: 200px;
+        width: 100px;
+        margin: 10px;
     }
 
     ul {
+        color: solid white;
+        display: flex;
         list-style-type: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: var(--spacer);
+        text-decoration: none;
+    }
+
+    ul div {
+        padding-right: var(--spacer);
     }
 
     li {
         list-style: none;
+        display: inline-block;
+        padding: var(--spacer);
+        text
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 
-header img {
-    height: auto;
-    width: 200px;
+img,
+picture,
+video {
+    max-width: 100%;
 }
 
-body {
-    background-color: blanchedalmond;
+p {
+    font-family: sans-serif;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.info {
+    background-color: var(--green);
+    padding: var(--spacer);
+    display: block;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--orange);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #FFC58F;
+    }
+}
+
+section {
+    display: flex;
+    background-color: #94D5C3;
+    margin: var(--spacer) 0;
+
+    .section-txt {
+        width: 45%;
+        padding: var(--spacer);
+
+    }
+
+    img {
+        height: auto;
+        width: 55%;
+        object-fit: cover;
+    }
+
+    &.headline {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            position: absolute;
+            right: var(--spacer);
+            top: var(--spacer);
+            font-size: 75px;
+            text-align: center;
+            transform: center;
+            line-height: 1;
+        }
+    }
+
+    &.event {
+        background-color: #C9B7F0;
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 }

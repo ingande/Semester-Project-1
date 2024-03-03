@@ -1,0 +1,60 @@
+@import url(./style.css);
+
+.contact {
+    background-color: white;
+    column-gap: var(--spacer);
+
+    div {
+
+        padding: var(--spacer);
+    }
+
+    .find {
+        width: 55%;
+        background-color: var(--green);
+
+    }
+
+    .open {
+        width: 45%;
+        background-color: var(--green);
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row;
+    }
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* margin: 6px; */
+    resize: vertical;
+    font-family: bayon;
+}
+
+textarea {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    padding-top: 5px;
+}
+
+input[type=submit] {
+    /* width: 100%; */
+    background-color: var(--orange);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: Bayon;
+
+    &:hover {
+        background-color: #FFC58F;
+    }
+}

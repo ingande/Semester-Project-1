@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Bayon/Bayon-Regular.woff2) format('woff2');
+}
+
+
+/*
+    Roboto
+*/
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./Roboto/Roboto-light-300.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Roboto/Roboto-regular-400.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./Roboto/Roboto-bold-700.woff2) format('woff2');
+}
+
+
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+b {
+    font-weight: 700;
+}
